@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --blue: #88aaf5;
+    --yellow: #ded87e;
+    --white: #fefefe;
+    font: 30px "Source Sans Pro", sans-serif;
+    color: var(--white);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px var(--tan);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 10px;
+  }
+  
+  .intro h1 {
+    font: 3.5rem "Montserrat", sans-serif;
+  }
+  
+  h2 {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  hr {
+    border: 2px solid white;
+  }
+  
+  .about--me {
+    background-color: var(--blue);
+    color: var(--yellow);
+  }
+  
+  nav {
+    font-size: 0.7rem;
+    background-color: black;
+    border-radius: 3px;
+  }
+  
+  li {
+    list-style: none;
+    text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  nav a:hover {
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+  
+  .on--page {
+    background-color: grey;
+    color: white;
+  }
+  
+  .about--me__info {
+    font: 20px "Source Sans Pro", sans-serif;
+  }
+  
+  h2 {
+    font: 2.5rem "Montserrat", sans-serif;
+  }
+  
