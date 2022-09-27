@@ -1,79 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kayleen Ellis's Personal Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177242401-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-177242401-1');
+    </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayleen Ellis full stack developer</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylsheet" href="styles/scss/styles.scss">
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="intro">
-      <h1>Kayleen Ellis</h1>
-      <hr />
-      <p>Full Stack Developer</p>
+  <!-- Mobile menu button -->
+  <div id="home" class="visuallyHidden"></div>
+  <div class="menuButton" id="menuButton" tabindex=0>
+    <div class="linesContainer">
+      <span></span>
     </div>
+  </div>
+  <!-- Side menu -->
+  <aside class="sideMenu sideMenuShow" id="sideMenu"> 
+    <p class="logo">KE</p>
+    
+
     <nav>
-      <ul>
-        <li>
-          <a class="nav--about--me" href="#myself">About Me</a>
+      <ul class="navBar">
+        <li class="homeNav">
+          <a href="#home" class="navItem">
+            <i class="lni lni-home"></i>
+            <span class="navItemName">HOME</span>
+          </a>
         </li>
-        <li>
-          <a class="nav--skills" href="#skills">Skills</a>
+        <li class="aboutNav">
+          <a href="#about" class="navItem">
+            <i class="lni lni-user"></i>
+            <span class="navItemName">ABOUT</span>
+          </a>
         </li>
-        <li>
-          <a class="nav--projects" href="#projects">Projects</a>
+        <li class="skillsNav">
+          <a href="#skills" class="navItem">
+            <i class="lni lni-code-alt"></i>
+            <span class="navItemName">SKILLS</span>
+          </a>
         </li>
-        <li>
-          <a class="nav--resume" href="#resume">Resume</a>
+        <li class="worksNav">
+          <a href="#works" class="navItem">
+            <i class="lni lni-briefcase"></i>
+            <span class="navItemName">WORKS</span>
+          </a>
         </li>
-        <li>
-          <a class="nav--connect" href="#connect">Connect</a>
+        <li class="contactNav">
+          <a href="#contact" class="navItem">
+            <i class="lni lni-phone"></i>
+            <span class="navItemName">CONTACT</span>
+          </a>
         </li>
       </ul>
     </nav>
-    <div class="about--me">
-      <div id="myself" class="about--me__info">
-        <h2>About Me</h2>
-        <hr />
 
-        <div class="about--me__grid">
-            <p>
-              My full name is Kayleen Ellis and I am a full-stack developer with a passion for creative problem
-              solving and efficiency
-            </p>
-            <div class="skills">
-                <div class="skills--content" id="skills">
-                  <h2>Skills</h2>
-                  <hr />
-                  <div class="skills-grid">
-                    <ul>
-                      <li>Java</li>
-                      <li>JavaScript</li>
-                      <li>JPA</li>
-                      <li>TDD</li>
-                      <li>Object Oriented Programming (OOP)</li>
-                      <li>JSON</li>
-                      <li>AJAX</li>
-                      <li>Restful APIs</li>
-                      <li>Relational Databases</li>
-                    </ul>
-                    <ul>
-                      <li>Spring</li>
-                      <li>MVC</li>
-                      <li>Hibernate</li>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>Flexbox</li>
-                      <li>Grid</li>
-                      <li>Agile (Scrum)</li>
-                      <li>Source Control / Git</li>
-                    </ul>
-                  </div>
+    <div class="scrollDown" id="scrollDown">
+      <i class="lni lni-arrow-down"></i>
+      <span class="navItemName scrollDownText">Scroll Down</span>
+    </div>
+  </aside>
+
+  <!--Beginning of the wrapper -->
+  <div class="outerWrapper"> 
+    <div class="innerWrapper">
+      <!-- Header -->
+      <header>
+        <div class="heroImageContainer">
+          <img src="/images/myPic.jpg" alt="A picture of Kayleen">
+        </div>
+        <div class="heroDescription">
+          <p class="greeting">HI THERE! I'M</p>
+          <h1><span>KAYLEEN</span> ELLIS</h1>
+          <p class="smallBio">A <span>Full Stack Developer</span> passionate about creating interactive applications and experiences on the web.</p>
+          <div class="socialsResume">
+            <a class="resumeLink" href="/images/Kayleen Ellis resume 1 (3).jpg" alt="Kayleen Ellis' resumé" target="_blank" rel="noopener noreferrer">Resumé</a>
+            <ul class="socialsList">
+              <li>
+                <a href="https://www.linkedin.com/in/kayleen-ellis-855a4ab7/" target="_blank" rel="noopener noreferrer"><i class="lni lni-linkedin-original" aria-label="Link to Alex's LinkedIn page.">
+                  <img src="/images/icons8-linkedin-circled-48.png" id="box1"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="lni lni-github-original" aria-label="Link to my GitHub page.">
+                  <img src="/images/icons8-github-48.png" id="box2" alt="github">
+                </i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/KayleenEllis4" target="_blank" rel="noopener noreferrer"><i class="lni lni-twitter-original" aria-label="Link to my Twitter profile.">
+                  <img src="/images/icons8-twitter-48.png" id="box3" alt="twitter">
+                </i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Beginning of Main -->
+      <main>
+        <!-- About Section -->
+        <section class="aboutSection" id="about">
+          <div class="sectionHead">
+            <span>SOME INFO</span>
+            <h2>ABOUT ME</h2>
+          </div>
+          
+          <article class="aboutContainer sectionContainer">
+            <p>I'm an enthusiastic junior software developer who can assist with all software coding and
+              design functions. I enjoy the challenge of creating complex applications and experiences that are interactive, informative and accessible, and I am always learning and improving my skills on the latest web technologies.</p>
+          </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skillsSection" id="skills">
+          <div class="sectionHead">
+            <span>CHECK OUT MY</span>
+            <h2>SKILLS</h2>
+          </div>
+        
+          <div class="skillsContainer sectionContainer">
+            <ul class="skillsGrid">
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-html5-24.png">
+                  <p>HTML</p>
                 </div>
-              </div>    
-              <script src="./src/js/app.js"></script>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-css3-48.png">
+                  <p>CSS</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-sass-avatar-48.png">
+                  <p>SASS</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-javascript-48.png">
+                  <p>Javascript</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-java-48.png">
+                  <p>Java</p>
+                </div>
+              </li>
+             
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-rest-api-100.png" alt="REST">
+                  <p>REST API</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-github-48.png">
+                  <p>Git</p>
+                </div>
+              </li>
+             
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-visual-studio-code-2019-48.png">
+                  <p>VS Code</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-intellij-idea-48.png">
+                  <p>IntelliJ</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-office-365-48.png">
+                  <p>M365</p>
+                </div>
+              </li>
+              <li>
+                <div class="itemContainer">
+                  <img src="/images/icons8-terminal-64.png">
+                  <p>Terminal</p>
+                </div>
+              </li>
+        </section>
+
+        <!-- Works Section -->
+        <section class="worksSection" id="works">
+          <div class="sectionHead">
+            <span>TAKE A LOOK AT MY</span>
+            <h2>PROJECTS</h2>
+          </div>
+
+          <div class="worksContainer sectionContainer">
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="/images/Screen Shot 2022-09-16 at 8.13.05 PM.png" alt="Virtual Pet">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Codetari</h3>
+                <h4>Technologies Used: <span class="techStack">REST API</span>, <span class="techStack">Java</span>, <span class="techStack">SpringBoot</span></h4>
+                <ul>
+                  <li>A website created for users learning to code.</li>
+                  <li>Has different variety of games to play to test coding knowledge pulled from an API.</li>
+                  <li>Some games made with SPA and MPA.</li>
+                  <li>Still in progress.</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://codetari-demo.herokuapp.com/" class="liveLink" target="_blank" rel="noopener noreferrer">Live</a>
+                  <a href="https://github.com/KayKay-9175/final-project-summer-2022-codetari" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article>
+
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="/images/Screen Shot 2022-09-16 at 6.55.29 PM.png" alt="website">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Review-Website</h3>
+                <h4>Technologies Used: <span class="techStack">Java</span>, <span class="techStack">SpringBoot</span>, <span class="techStack">ThymeLeaf</span>, <span class="techStack">MVC</span>, <span class="techStack">HTML</span>, <span class="techStack">CSS</span></h4>
+                <ul>
+                  <li>A website where users can comment,review and post hashtags on their favorite brands.</li>
+                  <li>Built a dynamic web application with a MVC architecture and ThymeLeaf template.</li>
+                  <li>Pulls random hashtags from the Populator where users can write an anonymous reflection for others to see, all stored in Firebase</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://github.com/KayKay-9175/review-site-the-best-damn-clothing-reviews" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+
+                </div>
+              </div>
+            </article>
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="/images/Screen Shot 2022-09-15 at 4.13.04 PM.png" alt="Album shot page.">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Album-Song Collection</h3>
+                <h4>Technologies Used: <span class="techStack">REST API</span>, <span class="techStack">SpringBoot</span>, <span class="techStack">Javascript</span>, <span class="techStack">Java</span>, <span class="techStack">HTML</span>, <span class="techStack">HTTP Requests</span></h4>
+                <ul>
+                  <li>Information on songs pulled from a Restful API.</li>
+                  <li>A SPA virtual collection of artists, albums, and songs. </li>
+                  <li>Through HTTP methods, users can add and delete artists, albums, and or songs.</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://github.com/KayKay-9175/album-songs-bossbeats" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="/images/Screen Shot 2022-09-13 at 7.52.12 PM.png" alt="Twitter Slang Generator page with results diplsayed.">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Twitter Slang Generator</h3>
+                <h4>Technologies Used: <span class="techStack">JQuery</span>, <span class="techStack">SASS</span></h4>
+                <ul>
+                  <li>Users click an abbreviation and are given a randomly generated definition.</li>
+                  <li>Words are randomly chosen from a large object containing arrays of words for each letter.</li>
+                  <li>Toggle between light and dark themes.</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://github.com/KayKay-9175/TwitterSlang" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="workBox">
+              <div class="workImageContainer">
+                <img src="/images/Screen Shot 2022-09-13 at 5.44.27 PM.png" alt="Virtual pet">
+              </div>
+              <div class="workDescribeContainer">
+                <h3>Virtual Pet Amok</h3>
+                <h4>Technologies Used: <span class="techStack">Java</span>, <span class="techStack">TDD</span>, <span class="techStack">OOP</span>, <span class="techStack">IntelliJ</span></h4>
+                <ul>
+                  <li>Designed console application that lets users create and interact with their own virtual pets.
+                  </li>
+                  <li>Users are also able to add a new pet into the shelter or adpot a pet out the shelter.</li>
+                </ul>
+                <div class="workLinks">
+                  <a href="https://github.com/KayKay-9175/virtual-pet-KayKay-9175" class="repoLink" target="_blank" rel="noopener noreferrer">Repo</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contactSection" id="contact">
+          <div class="sectionHead">
+            <span>SAY HELLO</span>
+            <h2>CONTACT</h2>
+          </div>
+
+          <div class="contactContainer sectionContainer">
+            <h3>Get in Touch : 516-376-3580</h3>
+            <div class="contactTypes">
+              <div class="flexContainer">
+                <div class="typeBox">
+                  <i class="lni lni-envelope"></i>
+                  <a href="mailto:kellis152@gmail.com">kellis152@gmail.com</a>
+                  <p>Email Me: elliskayleen@gmail.com</p>
+                </div>
+              </div>
+            
+
+        </section>
+      </main> <!-- End of Main -->
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Kayleen Ellis All Rights Reserved 2022</p>
+    </footer>
+    <!-- Icons provided by https://lineicons.com/ -->
+  </div> <!-- End of the wrapper -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+  
 </body>
 </html>
